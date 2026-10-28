@@ -60,3 +60,233 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dj SalvaTps1 | Club Privado</title>
+    <style>
+        :root {
+            --bg-dark: #0a0b0e;
+            --bg-card: #12141c;
+            --primary: #00ffcc;
+            --primary-hover: #00b386;
+            --text-main: #ffffff;
+            --text-muted: #8a92a6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            padding: 60px 20px 20px 20px;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--primary);
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin: 10px 0;
+            font-weight: 800;
+        }
+
+        .highlight {
+            color: var(--primary);
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            line-height: 1.6;
+        }
+
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .badge {
+            background-color: var(--bg-card);
+            border: 1px solid #232635;
+            padding: 15px 25px;
+            border-radius: 12px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-premium {
+            background-color: var(--primary);
+            color: #000000;
+            padding: 18px 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0, 255, 204, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-premium:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 255, 204, 0.6);
+        }
+
+        .price-text {
+            color: var(--text-muted);
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+
+        .secondary-link {
+            color: var(--primary);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        .secondary-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Sección de Cómo Funciona idéntica a soyHerios */
+        .how-it-works {
+            background-color: var(--bg-card);
+            padding: 60px 20px;
+            margin-top: 80px;
+            border-top: 1px solid #1f2231;
+        }
+
+        .how-it-works h2 {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            max-width: 1000px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+
+        .step-card {
+            background: #1a1d29;
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid #282c3f;
+            position: relative;
+            text-align: left;
+        }
+
+        .step-number {
+            background-color: var(--primary);
+            color: #000000;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .step-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .step-card p {
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        footer {
+            padding: 40px 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid #12141c;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Puedes cambiar esta imagen por tu foto de perfil de YouTube o SoundCloud en el futuro -->
+        <img src="https://soundcloud.com" onerror="this.src='https://unsplash.com'" class="avatar" alt="Dj SalvaTps1">
+        
+        <h1>¡El sitio ideal de los <span class="highlight">Mejores SETS</span>!</h1>
+        <p class="subtitle">Te haces miembro VIP y desbloqueas el acceso a todas mis mezclas exclusivas, remixes propios y material de audio premium. Un set nuevo cada poco tiempo. Sin marcas de voz ni publicidad molesta.</p>
+    </header>
+
+    <main>
+        <div class="badge-container">
+            <div class="badge">🎧 Sesiones de Club</div>
+            <div class="badge">🔥 Remixes Extended</div>
+        </div>
+
+        <a href="https://soundcloud.com" target="_blank" class="btn-premium">¡Desbloquear Acceso VIP!</a>
+        <p class="price-text">$5.99 al mes · cancelas cuando quieras</p>
+        <a href="#" class="secondary-link">¿Prefieres escuchar primero? Ver sets gratis →</a>
+
+        <section class="how-it-works">
+            <h2>Cómo funciona</h2>
+            <div class="steps-grid">
+                
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Te haces miembro</h3>
+                    <p>Un pago mensual seguro para apoyar el canal y mantener el ritmo encendido.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Descargas las mezclas</h3>
+                    <p>Acceso directo a archivos de máxima calidad de audio (WAV/MP3 a 320kbps) sin acortadores raras.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>¡Disfrutas la fiesta!</h3>
+                    <p>Lleva los mejores tracks y sets en tu móvil, coche o altavoces para montar el festival donde quieras.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Plataforma Oficial de Dj SalvaTps1. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
